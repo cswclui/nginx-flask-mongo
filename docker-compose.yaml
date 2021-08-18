@@ -11,8 +11,6 @@ services:
       - backend
   backend:
     build: flask
-    environment: 
-      - FLASK_SERVER_PORT=9091
     command: python server.py
     volumes:
       - ./flask:/src
